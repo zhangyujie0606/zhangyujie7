@@ -1,0 +1,39 @@
+name: many many label
+description: 最多标签
+keywords:
+  - websocket
+  - network
+  - 1
+  - WW WW
+  - 中文很长一二三四五六七八九十就是标签呀一共二十七个字呀
+  - test1
+  - TEST1
+  - 1231
+  - 吗v覅
+  - test2
+  - test3
+  - WWW WWW WWW WWW WWW WWW WWW WWW WWWWW
+  - !@#$%^&*(
+  - rwegrwerg
+  - 123456789
+  - a
+  - ninoii
+  - ownbior nforengroe  npwreignpwi fnpwignpwre
+  - #
+  - fmienoe
+license: MMMMMMM                                   # GPLv2，LGPLv2.1，MIT，Apache license v2.0，BSD
+
+source_file:
+  - src/*.c
+
+build_config:
+  include:
+    - include
+  cflag: ""                             # C 编译器所需要要的编译参数
+  define:                                      # 宏定义
+    - CONFIG_USING_TLS
+
+install:
+  - dest: include
+    source:
+      - "include/librws.h"
